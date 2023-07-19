@@ -12,10 +12,15 @@ namespace Boolean.CSharp.Main.Misc
         private string _arrivalAirport;
         private string _journeyDetails;
         private bool _flightCancelled;
-        
+        private int _currentPassengerCount;
+
         public Aeroplane()
         {
             
+        }
+        public int FlightDetails(List<string> manifest)
+        {
+            return _currentPassengerCount = manifest.Count;
         }
         public bool FlightDetails(string departureAirport, string arrivalAirport) 
         {
